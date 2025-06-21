@@ -30,6 +30,8 @@
       "@Controllers/*": ["src/Presentation/Controllers/*"],
       "@Middlewares/*": ["src/Presentation/Middlewares/*"],
       "@Routers/*": ["src/Presentation/Routers/*"],
+
+      "@Graphql/*": ["src/Graphql/*"],
     },
   }
 }
