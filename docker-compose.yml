@@ -1,0 +1,18 @@
+services:
+  sports-api:
+    image: sports-api
+    container_name: sports-api
+    ports:
+      - "3000:3000"
+    networks:
+      - sports-net
+    env_file:
+      - ./server/.env.production
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+
+networks:
+  sports-net:
+    driver: bridge
+    name: sports-net
